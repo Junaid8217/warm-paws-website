@@ -1,16 +1,61 @@
-# React + Vite
+# ❄️ WarmPaws — Pet Care in Winter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🔗 **Live Site:** https://stupendous-fox-6aad8d.netlify.app
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 About the Project
+**WarmPaws** is a winter-focused pet care platform that helps pet owners keep their furry friends warm, safe, and healthy during the cold season. Users can explore local pet care services, winter clothing for pets, grooming options, expert tips, and book services easily.
 
-## React Compiler
+This project is built as a **Single Page Application (SPA)** using **React** with **Firebase Authentication**.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🚀 Main Features
+- 🐾 Winter care services for pets (clothing, grooming, tips, etc.)  
+- 🔐 Firebase authentication (Email/Password & Google Login)  
+- 🧩 Protected routes: service details and booking accessible only after login  
+- 📝 Book services through a simple form with success toast  
+- 📋 My Profile page to view and update user info (Name, Image)  
+- 💡 Extra homepage section with winter care tips and expert vets  
+- 🌗 Responsive on mobile, tablet, and desktop  
+- ✨ Subtle animations using **AOS**, **Swiper.js**, and **react-hot-toast**  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧩 Pages Included
+- Home (hero slider + services + winter tips + expert vets + extra section)  
+- Services / Service Details (Protected Route)  
+- My Profile (View & Update)  
+- Login & Signup  
+- Forgot Password  
+- 404 Page (without Navbar & Footer)  
+
+---
+
+## 🛠️ Technologies Used
+**Frontend:** React, React Router, Tailwind CSS, Firebase  
+**Packages Used:** AOS, Swiper.js, react-hot-toast  
+**Others:** Animate.css, React-Spring  
+
+---
+
+## 🧱 JSON Data
+Winter care services are stored in a JSON file with fields like:  
+`serviceId, serviceName, providerName, providerEmail, price, rating, slotsAvailable, description, image, category`  
+
+Example:
+
+```json
+{
+  "serviceId": 1,
+  "serviceName": "Winter Coat Fitting for Dogs",
+  "providerName": "PawCare Studio",
+  "providerEmail": "info@pawcare.com",
+  "price": 25,
+  "rating": 4.9,
+  "slotsAvailable": 4,
+  "description": "Custom coat fitting and warm outfit options to keep your dog comfortable in the cold.",
+  "image": "https://i.postimg.cc/example1.png",
+  "category": "Clothing"
+}
